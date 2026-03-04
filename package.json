@@ -1,0 +1,26 @@
+{
+  "name": "pbt-spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weiihann/pbt-spec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/weiihann/pbt-spec/issues"
+  },
+  "homepage": "https://github.com/weiihann/pbt-spec#readme",
+  "dependencies": {
+    "esbuild": "^0.27.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
