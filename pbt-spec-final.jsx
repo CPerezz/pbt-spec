@@ -132,7 +132,7 @@ function Nav({ active, onNav }) {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 32, padding: "14px 18px", background: "#0F172A", borderRadius: 10, border: `1px solid ${C.cardBorder}` }}>
       {sections.map((s) => (
-        <button key={s.id} onClick={() => onNav(s.id)} style={{ fontFamily: font.mono, fontSize: 10.5, padding: "6px 12px", borderRadius: 6, border: `1px solid ${active === s.id ? C.structural : C.cardBorder}`, background: active === s.id ? C.structuralDim + "40" : "transparent", color: active === s.id ? C.structural : C.dim, cursor: "pointer", transition: "all 0.2s", letterSpacing: "0.04em" }}>
+        <button key={s.id} data-target={s.id} onClick={() => onNav(s.id)} style={{ fontFamily: font.mono, fontSize: 10.5, padding: "6px 12px", borderRadius: 6, border: `1px solid ${active === s.id ? C.structural : C.cardBorder}`, background: active === s.id ? C.structuralDim + "40" : "transparent", color: active === s.id ? C.structural : C.dim, cursor: "pointer", transition: "all 0.2s", letterSpacing: "0.04em" }}>
           {s.num}. {s.label}
         </button>
       ))}

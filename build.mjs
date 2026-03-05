@@ -44,6 +44,22 @@ const html = `<!DOCTYPE html>
 </head>
 <body>
 ${bodyHtml}
+<script>
+  document.querySelectorAll('[data-target]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('[data-target]').forEach(function(b) {
+        b.style.borderColor = '#1E293B';
+        b.style.background = 'transparent';
+        b.style.color = '#475569';
+      });
+      btn.style.borderColor = '#F59E0B';
+      btn.style.background = 'rgba(120,53,15,0.25)';
+      btn.style.color = '#F59E0B';
+      var el = document.getElementById(btn.getAttribute('data-target'));
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>`;
 
